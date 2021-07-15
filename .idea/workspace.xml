@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0db04bde-2ebc-477e-88b6-a7d6b5e1108c" name="Default Changelist" comment="перерва на сон">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0db04bde-2ebc-477e-88b6-a7d6b5e1108c" name="Default Changelist" comment="дз практика готово" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +83,7 @@
       <workItem from="1626167088960" duration="4448000" />
       <workItem from="1626256429972" duration="137000" />
       <workItem from="1626275173124" duration="8039000" />
-      <workItem from="1626338058380" duration="4002000" />
+      <workItem from="1626338058380" duration="4606000" />
     </task>
     <task id="LOCAL-00001" summary="async tasks">
       <created>1614808180001</created>
@@ -185,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626294071171</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="дз практика готово">
+      <created>1626342281875</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1626342281875</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +218,8 @@
     <MESSAGE value="done newWay plan" />
     <MESSAGE value="add task for incubator" />
     <MESSAGE value="перерва на сон" />
-    <option name="LAST_COMMIT_MESSAGE" value="перерва на сон" />
+    <MESSAGE value="дз практика готово" />
+    <option name="LAST_COMMIT_MESSAGE" value="дз практика готово" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
