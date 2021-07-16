@@ -138,11 +138,10 @@
     //
     // З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
     //     Записати цей об'єкт в новий масив
-
-    let newMassifs = [];
+    let usersWithCities = [];
     let address = [];
     for ( i = 0; i < usersWithId.length; i++){
-        // newMassifs = usersWithId[i];
+        usersWithCities = usersWithId[i];
         // console.log(usersWithId[i]);
     }
     let user_id = citiesWithId.user_id;
@@ -152,11 +151,11 @@
     });
     address = citiesWithId;
     console.log(address);
-    for (i=0; i< address.length; i++){
+    for (i=0; i< address.length; i++) {
         // console.log(address[i]);
     }
-    newMassifs = usersWithId.concat(address);
-    console.log(newMassifs);
+    usersWithCities = usersWithId.concat(address);
+    console.log(usersWithCities);
 </script>
 </body>
 </html>
