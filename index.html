@@ -11,8 +11,37 @@
     // - Дан масив [1, 2, 3]. Додайте йому в кінець елементи 4, 5, 6.
     // - Дан масив [1, 2, 3]. Додайте йому в початок елементи 4, 5, 6.
     let array = ['a', 'b', 'c'];
-    array.push(3,2,1);
+    for (let i=1; i<=3; i++){
+        array.push(i);
+    }
     console.log(array);
+    let numbers = [1, 2, 3];
+    numbers.reverse();
+    console.log(numbers);
+    let newArray = [1, 2, 3];
+    newArray.push(4,5,6);
+    console.log(newArray);
+    let unArray = [1,2,3]
+    unArray.unshift(4,5,6);
+    console.log(unArray);
+</script>
+<script >
+    // Дан масив [1, 2, 3, 4, 5]. Перетворіть масив в [4, 5].
+    // - Дан масив [1, 2, 3, 4, 5]. Перетворіть масив в [1,2].
+    // - Дан масив [1, 2, 3, 4, 5]. Зробіть з нього масив [1, 2, 3, 'a', 'b', 'c'].
+    let spArray = [1, 2, 3, 4, 5];
+    spArray.splice(0,3);
+    console.log(spArray);
+    let slArray = [1, 2, 3, 4, 5];
+    slArray.splice(2,3);
+    console.log(slArray);
+    let pArray = [1, 2, 3, 4, 5];
+    pArray.push('a','b','c');
+    console.log(pArray);
+</script>
+<script >
+    // - Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
+
 </script>
 </body>
 </html>
