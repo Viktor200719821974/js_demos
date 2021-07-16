@@ -2,7 +2,35 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
+        <title>Home Work</title>
+        <style>
+           .users-box {
+               display: flex;
+               flex-wrap: wrap;
+               box-sizing: border-box;
+           }
+           .user-block {
+             width: 40%;
+               border: brown 2px solid;
+               border-radius: 10px;
+              margin: 10px;
+               padding: 10px;
+               text-align: center;
+               flex-direction: column;
+               background: chocolate;
+           }
+           .address-block{
+               border: maroon 2px solid;
+               border-radius: 10px;
+               display: flex;
+               background: #af6e1a;
+               padding: 5px;
+           }
+           .address-block p {
+               color: darkblue;
+               margin: 5px;
+           }
+        </style>
     </head>
     <body>
 
@@ -271,7 +299,19 @@
 					}
 				}
 			];
-
+            document.write(`<div class="users-box">`);
+            for (const usersListElement of usersList) {
+                document.write(`<div class="user-block">
+                    <h2>${usersListElement.id} - ${usersListElement.name} - ${usersListElement.username} </h2>
+                    <h3>${usersListElement.email} - ${usersListElement.phone}</h3>
+                    <div class="address-block">
+                        <p>City - ${usersListElement.address.city}</p>
+                        <p>Street - ${usersListElement.address.street}</p>
+                        <p>Suite - ${usersListElement.address.suite}</p>
+                        <p>Zip code - ${usersListElement.address.zipcode}</p>
+                    </div></div>`);
+            }
+                document.write(`</div>`);
 
         </script>
 
