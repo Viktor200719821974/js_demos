@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 3 classwork</title>
+</head>
+<body>
+<script >
+    // - Дан масив ['a', 'b', 'c']. Додайте йому в кінець елементи 1, 2, 3 за допомогою циклу.
+    // - Дан масив [1, 2, 3]. Зробіть з нього новий масив [3, 2, 1].
+    // - Дан масив [1, 2, 3]. Додайте йому в кінець елементи 4, 5, 6.
+    // - Дан масив [1, 2, 3]. Додайте йому в початок елементи 4, 5, 6.
+    let array = ['a', 'b', 'c'];
+    for (let i=1; i<=3; i++){
+        array.push(i);
+    }
+    console.log(array);
+    let numbers = [1, 2, 3];
+    numbers.reverse();
+    console.log(numbers);
+    let newArray = [1, 2, 3];
+    newArray.push(4,5,6);
+    console.log(newArray);
+    let unArray = [1,2,3]
+    unArray.unshift(4,5,6);
+    console.log(unArray);
+</script>
+<script >
+    // Дан масив [1, 2, 3, 4, 5]. Перетворіть масив в [4, 5].
+    // - Дан масив [1, 2, 3, 4, 5]. Перетворіть масив в [1,2].
+    // - Дан масив [1, 2, 3, 4, 5]. Зробіть з нього масив [1, 2, 3, 'a', 'b', 'c'].
+    let spArray = [1, 2, 3, 4, 5];
+    spArray.splice(0,3);
+    console.log(spArray);
+    let slArray = [1, 2, 3, 4, 5];
+    slArray.splice(2,3);
+    console.log(slArray);
+    let pArray = [1, 2, 3, 4, 5];
+    pArray.push('a','b','c');
+    console.log(pArray);
+</script>
+<script >
+    // - Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
+    let arrayNumbers = [244, 545, 484848, 874848, 4874864, 885484, 44848, 4848481, 854881];
+    for (let i = 0; i < arrayNumbers.length; i++) {
+        if (arrayNumbers[i] % 2 === 0) {
+            console.log(arrayNumbers[i]);
+        }
+
+    }
+    // - Взяти масив з 10 чисел або створити його. Створити 2й порожній масив. За допомогою будь-якого циклу скопіювати значення одного масиву в інший.
+    let arrayNumbers1 = [];
+    for (let i = 0; i < arrayNumbers.length; i++) {
+    }
+    arrayNumbers1.push(arrayNumbers);
+    console.log(arrayNumbers1);
+</script>
+<script >
+    // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
+    // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
+    // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
+    // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
+    let items =  [ 'a', 'b', 'c'];
+    let string = ' ';
+    for (let i=0; i < items.length;i++) {
+        string = string + items[i];
+    }
+    console.log('String:',string);
+    let string1 = ' ';
+    i = 0;
+    while (i < items.length) {
+        string1 = string1 + items[i];
+        i++;
+    }
+    console.log('String:',string1);
+    let string2 = ' ';
+    for ( const item of items) {
+        string2 = string2 + item;
+    }
+    console.log('String:',string2);
+    let string3 = ' ';
+    for ( const item of items) {
+        string3 = string3 + item;
+    }
+    console.log('String:',string3);
+</script>
+<script >
+    // зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+    //     1. перебрати його циклом while
+    //     2. перебрати його циклом for
+    //     3. перебрати циклом while та вивести  числа тільки з непарним індексом
+    // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
+    // 5. перебрати циклом while та вивести  числа тільки парні  значення
+    // 6. перебрати циклом for та вивести  числа тільки парні  значення
+    // 7. замінити кожне число кратне 3 на слово "okten"
+    // 8. вивести масив в зворотньому порядку.
+    // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
+    // 10
+    // створити пустий масив та :
+    //     - заповнити його 50 парними числами за допомоги циклу.
+    // - заповнити його 50 непарними числами за допомоги циклу.
+
+    // зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+    //     1. перебрати його циклом while
+
+    let massifs = [2,17,13,6,22,31,45,66,100,-18];
+    i =0;
+    while (i < massifs.length) {
+        console.log(massifs[i]);
+        i++;
+    }
+    // зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+    // 2. перебрати його циклом for
+
+    for (let j = 0; j < massifs.length; j++) {
+        console.log(massifs[j]);
+    }
+    // зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+    // 3. перебрати циклом while та вивести  числа тільки з непарним індексом
+    i =0;
+    while (i < massifs.length) {
+        if (i % 2 !==0){
+            console.log(massifs[i]);
+        }
+        i++;
+    }
+    // зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+    // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
+    for (let j = 0; j < massifs.length; j++) {
+        if (i % 2 !==0) {
+            console.log(massifs[i]);
+        }
+    }
+    // зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+    // 5. перебрати циклом while та вивести  числа тільки парні  значення
+    i =0;
+    while (i < massifs.length) {
+        if (massifs[i] % 2 ===0){
+            console.log(massifs[i]);
+        }
+        i++;
+    }
+    // зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+    // 6. перебрати циклом for та вивести  числа тільки парні  значення
+    for (let j = 0; j < massifs.length; j++) {
+        if (massifs[j] % 2 ===0) {
+            console.log(massifs[j]);
+        }
+    }
+    // зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+    // 7. замінити кожне число кратне 3 на слово "okten"
+    i =0;
+    while (i < massifs.length) {
+        if (massifs[i] % 3 === 0){
+            massifs[i] = 'okten'
+            console.log(massifs[i]);
+        }
+        i++;
+    }
+    // зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+    // 7. замінити кожне число кратне 3 на слово "okten"
+    let massifs1 = [2,17,13,6,22,31,45,66,100,-18];
+    for (let j = 0; j < massifs1.length; j++) {
+        if (massifs1[j] % 3 ===0) {
+            massifs1[j] = 'okten';
+            console.log(massifs1[j]);
+        }
+    }
+    // перебрати його циклом for (с заду на перед)
+
+    let massifs2 = [2,17,13,6,22,31,45,66,100,-18];
+    for (let j = massifs2.length - 1; j >= 0; j--) {
+        console.log(massifs2[j]);
+    }
+    // перебрати його циклом while (с заду на перед)
+
+    let massifsArray = [2,17,13,6,22,31,45,66,100,-18];
+    massifsArray.reverse(massifsArray);
+    i = 0;
+    while (i < massifsArray.length) {
+        console.log(massifsArray[i]);
+        i++;
+    }
+    // перебрати циклом while та вивести  числа тільки з непарним індексом (с заду на перед)
+
+    i =0;
+    while (i < massifsArray.length) {
+        if (i % 2 !==0){
+            console.log(massifsArray[i]);
+        }
+        i++;
+    }
+
+    // перебрати циклом for та вивести  числа тільки з непарним індексом (с заду на перед)
+
+    let massifs3 = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+    for (let j = massifs3.length ; j >= 0; j--) {
+        if (j % 2 !== 0) {
+            console.log(massifs3[j]);
+        }
+    }
+    // перебрати циклом while та вивести  числа тільки парні  значення (с заду на перед)
+
+    i =0;
+    while (i < massifsArray.length) {
+        if (massifsArray[i] % 2 ===0){
+            console.log(massifsArray[i]);
+        }
+        i++;
+    }
+    // перебрати циклом for та вивести  числа тільки парні  значення
+    // // 7. замінити кожне число кратне 3 на слово "okten"(с заду на перед)
+
+    let massifs4 = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+    for (let j = massifs4.length ; j >= 0; j--) {
+        if (massifs4[j] % 2 === 0) {
+            console.log(massifs4[j]);
+        }
+    }
+    let massifs5 = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+    for (let j = massifs5.length ; j >= 0; j--) {
+        if (massifs5[j] % 3 === 0) {
+            massifs5[j] = 'okten';
+            console.log(massifs5[j]);
+        }
+    }
+    // створити пустий масив та :
+    //     - заповнити його 50 парними числами за допомоги циклу.
+    // - заповнити його 50 непарними числами за допомоги циклу.
+    let massifArray1 = [];
+    for (let j = 2; j < 100; j++) {
+        if (j % 2 ===0){
+            massifArray1[j] = j;
+            console.log(massifArray1[j]);
+        }
+    }
+    let massifArray2 = [];
+    for (let j = 1; j < 100; j++) {
+        if (j % 2 !==0){
+            massifArray2[j] = j;
+            console.log(massifArray2[j]);
+        }
+    }
+</script>
+<script >
+
+    // Створити пустий масив та :-->
+    // // <!--        a. заповнити його 50 парними числами за допомоги циклу.
+
+    let massifArray3 = [];
+    for (let j = 2; j < 100; j++) {
+        if (j % 2 ===0){
+            massifArray3[j] = j;
+        }
+    }
+    console.log(massifArray3);
+
+    // Створити пустий масив та :-->
+    // <!--         b. заповнити його 50 непарними числами за допомоги циклу.
+
+    let massifArray4 = [];
+    for (let j = 1; j < 100; j++) {
+        if (j % 2 !==0){
+            massifArray4[j] = j;
+        }
+    }
+    console.log(massifArray4);
+
+    // 1. Створити пустий масив та :-
+    //     c. Заповнити масив 20ма рандомними числами. (Google: Generate random number JS)-->
+
+    let randArray = [];
+    for (let i = 0; i < 20; i++) {
+        randArray[i] = Math.random() ;
+    }
+    console.log(randArray);
+
+    // Створити пустий масив та :-->
+    // d. Заповнити масив 20ма рандомними чисалами в діапазоні від 8 до 732 (Google: Generate random number JS)-->
+
+    let randArray1 = [];
+    for (let i = 0; i < 20; i++) {
+        randArray1[i] = Math.floor(Math.random() * (732 - 8)) + 8;
+
+    }
+    console.log(randArray1);
+
+    // 2. Вивести за допомогою console.log кожен третій елемен-->
+
+    for (let i = 0; i < randArray1.length; i++) {
+        if (i % 3 === 0) {
+            console.log(randArray1[i]);
+        }
+    }
+    // 3. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним.-->
+
+    for (let i = 0; i < randArray1.length; i++) {
+        if (i % 3 === 0) {
+            if (randArray1[i] % 2 === 0) {
+                console.log(randArray1[i]);
+            }
+        }
+    }
+    // 4. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним та записати їх в новий масив-->
+
+    let newRandArray = [];
+    for (let i = 0; i < randArray1.length; i++) {
+        if (i % 3 === 0) {
+            if (randArray1[i] % 2 === 0) {
+                newRandArray[i] = i;
+            }
+        }
+    }
+    console.log(newRandArray);
+
+    // 5. Вивести кожен елемент масиву, сусід справа якого є парним-->
+
+    let newMassifs = [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ];
+    let next = 0;
+    for (let i = 0; i < newMassifs.length; i++) {
+        next = next+i ;
+        if (next % 2 === 0) {
+            console.log(newMassifs[i]);
+        }
+    }
+    // 6. Є масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. Обрахувати середній чек.-->
+
+    let newMassifs1 = [100,250,50,168,120,345,188];
+    let sum = 0;
+    for (let i = 0; i < newMassifs1.length; i++) {
+        sum = sum + newMassifs1[i];
+        console.log(sum);
+    }
+    sum = sum/newMassifs1.length;
+    console.log(sum);
+
+    // 7. Створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.-->
+
+
+    let randArray2 = [8, 311, 259, 251, 130, 18, 279, 525, 387, 434, 649, 523, 622, 521, 426, 408, 623, 315, 119, 473];
+    let mas = [];
+    for (let i = 0; i < 20; i++) {
+        randArray2[i] = randArray2[i] * 5;
+
+        mas.push(randArray2[i]);
+    }
+    console.log(mas);
+
+    // <!--    8. Створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо елемент є числом - додати його в інший масив.-->
+
+    let arrayNumber = ['sdghd', 689985, 4===6, 6655, 'yyyytu', 644848, 'yijijijjiji', 5<6, 'koohothojojhoto', 541854155, 7!==5 ];
+    let newArrayNumber = [];
+    for (let i = 0; i < arrayNumber.length; i++) {
+        if (typeof arrayNumber[i] === 'number'){
+            newArrayNumber.push(arrayNumber[i]) ;
+        }
+    }
+    console.log(newArrayNumber);
+</script>
+</body>
+</html>
