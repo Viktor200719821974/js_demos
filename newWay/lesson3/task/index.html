@@ -274,38 +274,32 @@
 
     // 2. Вивести за допомогою console.log кожен третій елемен-->
 
-    for (let i = 0; i < randArray1.length; i++) {
-        if (i % 3 === 0) {
+    for (let i = 2; i < randArray1.length; i+=3) {
             console.log(randArray1[i]);
-        }
     }
     // 3. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним.-->
 
-    for (let i = 0; i < randArray1.length; i++) {
-        if (i % 3 === 0) {
+    for (let i = 2; i < randArray1.length; i+=3) {
             if (randArray1[i] % 2 === 0) {
                 console.log(randArray1[i]);
             }
-        }
     }
     // 4. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним та записати їх в новий масив-->
 
     let newRandArray = [];
-    for (let i = 0; i < randArray1.length; i++) {
-        if (i % 3 === 0) {
+    for (let i = 2; i < randArray1.length; i+=3) {
             if (randArray1[i] % 2 === 0) {
-                newRandArray[i] = i;
+                newRandArray.push(randArray1[i]);
             }
-        }
     }
     console.log(newRandArray);
 
     // 5. Вивести кожен елемент масиву, сусід справа якого є парним-->
 
     let newMassifs = [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ];
-    let next = 0;
+    let next = 1;
     for (let i = 0; i < newMassifs.length; i++) {
-        next = next+i ;
+        next = newMassifs[i+1];
         if (next % 2 === 0) {
             console.log(newMassifs[i]);
         }
@@ -327,9 +321,7 @@
     let randArray2 = [8, 311, 259, 251, 130, 18, 279, 525, 387, 434, 649, 523, 622, 521, 426, 408, 623, 315, 119, 473];
     let mas = [];
     for (let i = 0; i < 20; i++) {
-        randArray2[i] = randArray2[i] * 5;
-
-        mas.push(randArray2[i]);
+        mas.push(randArray2[i] * 5);
     }
     console.log(mas);
 
