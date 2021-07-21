@@ -129,27 +129,29 @@ sumArray(numberArray);
 
    let keyArray = [{name: 'Dima', age: 13}, {model: 'Camry'}];
 function keyArrayKey (array){
-        for (let key in array) {
+    for (const arrayElement of array) {
+        for (let key in arrayElement) {
         console.log(key);
     }
-    return array;
+    }
+    return;
     }
     keyArrayKey(keyArray);
 
     // 10) Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
     // EXAMPLE:
     //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
-
-    let keyArray1 = [{name: 'Dima', age: 13}, {model: 'Camry'}];
-
-    function item (array) {
-        for (const itemElement of array) {
-            console.log(itemElement);
-        }
-
-        return array;
-    }
-    item(keyArray1);
+    //
+    // let keyArray1 = [{name: 'Dima', age: 13}, {model: 'Camry'}];
+    //
+    // function item (array) {
+    //     for (const itemElement of array) {
+    //         console.log(itemElement);
+    //     }
+    //
+    //     return array;
+    // }
+    // item(keyArray1);
    //  for (let i = 0; i < keyArray1.length; i++) {
    //   console.log(keyArray1.name, keyArray1.age, keyArray1.model);
    //
