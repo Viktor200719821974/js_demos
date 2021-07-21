@@ -8,26 +8,26 @@
 <script >
     // 1) створити функцію яка приймає масив та виводить його
 
-// function creatArray(header){
-//     for (let i = 0; i < header.length; i++) {
-//       console.log(header[i]);
-//
-//     }
-// }
-// let array = [2433, 'ffdgghrr', 456546545, 89978, 95656456,5599,64848];
-// creatArray(array);
+function creatArray(header){
+    for (let i = 0; i < header.length; i++) {
+      console.log(header[i]);
+
+    }
+}
+let array = [2433, 'ffdgghrr', 456546545, 89978, 95656456,5599,64848];
+creatArray(array);
 //
 //     // 2) створити функцію яка заповнює масив рандомними числами та виводить його. Для виведення використати попередню функцію.
 
-// function funRandArray(header) {
-//     for (let i = 0; i < 20; i++) {
-//            header[i] = Math.random() ;
-//         console.log(header[i]);
-//     }
-//     return header;
-// }
-// let randArray = [];
-// funRandArray(randArray);
+function funRandArray(header) {
+    for (let i = 0; i < 20; i++) {
+           header[i] = Math.random() ;
+        console.log(header[i]);
+    }
+    return header;
+}
+let randArray = [];
+funRandArray(randArray);
 
     // 3) створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
 //
@@ -163,6 +163,16 @@ function keyArrayKey (array){
     //     [2,3,4,5]
     // результат
     //     [3,5,7,9]
+
+    const sumArray1 = (array1,array2) => {
+        let newArray = [];
+        for (let i = 0; i < array1.length; i++) {
+            newArray.push(array1[i] + array2[i]);
+        }
+        return newArray;
+    }
+    let f = sumArray1([1,2,3,4],[2,3,4,5]);
+    console.log(f);
 
 
 </script>
