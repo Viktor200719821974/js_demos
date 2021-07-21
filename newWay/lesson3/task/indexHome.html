@@ -142,22 +142,21 @@ function keyArrayKey (array){
     // EXAMPLE:
     //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
     //
-    // let keyArray1 = [{name: 'Dima', age: 13}, {model: 'Camry'}];
-    //
-    // function item (array) {
-    //     for (const itemElement of array) {
-    //         console.log(itemElement);
-    //     }
-    //
-    //     return array;
-    // }
-    // item(keyArray1);
-   //  for (let i = 0; i < keyArray1.length; i++) {
-   //   console.log(keyArray1.name, keyArray1.age, keyArray1.model);
-   //
-   //  }
-   // let newKeyArray = [];
-   //  newKeyArray.push(keyArray1);
+    let keyArray1 = [{name: 'Dima', age: 13}, {model: 'Camry'}];
+
+    function k (array) {
+        for (let itemElement of array) {
+            for (let i = 0; i < itemElement.length; i++) {
+                if (itemElement === 'string') {
+                    itemElement[i] = + ' ';
+                    console.log(itemElement[i]);
+                }
+            }
+               }
+        return;
+    }
+    k(keyArray1);
+
     // 11) створити функцію  яка скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
     //     EXAMPLE:
     // [1,2,3,4]
